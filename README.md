@@ -1,28 +1,15 @@
-# Registo Cais — versão PC/Web
+# Registo Cais
 
-Versão web da aplicação de controlo de acessos do Cais.
+Aplicação web para registar entradas e saídas de estafetas, viaturas e pessoas.
 
-## Módulos
-- Estafetas
-- Viaturas
-- Pessoas / autorização da Central
+Os registos podem ser exportados para CSV ou impressão. A aplicação também suporta uso offline e, quando disponível no navegador, ditado por voz.
 
-## Dados
-Os registos são guardados no `localStorage` do navegador usado. Não são enviados para o GitHub nem para um servidor.
+Por defeito, os dados ficam no `localStorage` do navegador. O repositório também contém a estrutura opcional de sincronização com Supabase.
 
-## Recursos mantidos
-- Entrada e saída com data/hora automática
-- Vigilante (nome + número)
-- Modo escuro
-- Histórico/autocomplete
-- Estados Dentro/Saiu
-- Autorização da Central no módulo Pessoas
-- CSV
-- Folha/PDF Strong Charon via impressão do navegador
-- Ditado por voz quando o navegador suporta Web Speech API
-- Funcionamento offline após a primeira abertura via Service Worker
+Para testar localmente:
 
-## GitHub Pages
-Publicar esta pasta como `/registo-cais/` no repositório `Barretomen.github.io` deixa a aplicação disponível em:
+```bash
+python -m http.server 8080
+```
 
-`https://barretomen.github.io/registo-cais/`
+Depois, abra `http://localhost:8080`.
