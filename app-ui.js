@@ -58,4 +58,4 @@
   $('authForm').onsubmit=e=>{e.preventDefault();if(window.cloudApp)window.cloudApp.signIn()};$('logoutBtn').onclick=()=>window.cloudApp&&window.cloudApp.signOut();
   $('editOverlay').onclick=e=>{if(e.target===$('editOverlay'))closeEdit()};$('vehicleEditOverlay').onclick=e=>{if(e.target===$('vehicleEditOverlay'))closeVehicleEdit()};$('personEditOverlay').onclick=e=>{if(e.target===$('personEditOverlay'))closePersonEdit()};$('guardOverlay').onclick=e=>{if(e.target===$('guardOverlay'))closeGuardSetup()};
 
-  applyTheme(state.theme);updateClock();setInterval(updateClock,1000);switchModule(state.module);if(state.cloudEnabled&&window.cloudApp)window.cloudApp.init();else if(!state.guardName||!state.guardNumber)setTimeout(()=>openGuardSetup(false),250);
+  applyTheme(state.theme);updateClock();setInterval(updateClock,1000);switchModule(state.module);if(state.cloudEnabled&&window.cloudApp)window.cloudApp.init();else if(!state.guardNumber)setTimeout(()=>openGuardSetup(false),250);
