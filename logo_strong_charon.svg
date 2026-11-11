@@ -8,8 +8,9 @@
   </g>
   <g font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900" letter-spacing="1">
     <text x="119" y="70" font-size="56" fill="#0053C7">STR</text>
-    <circle cx="248" cy="51" r="19" fill="#D10A22"/>
-    <circle cx="248" cy="51" r="8" fill="#FFFFFF"/>
+    <circle cx="248" cy="51" r="19" fill="none" stroke="#D10A22" stroke-width="7"/>
+    <path d="M232 51a16 16 0 0 1 11-15" fill="none" stroke="#0053C7" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="248" cy="51" r="7" fill="#0B1D32"/>
     <text x="273" y="70" font-size="56" fill="#0053C7">NG</text>
     <text x="119" y="128" font-size="56" fill="#0B1D32">CHARON</text>
   </g>
