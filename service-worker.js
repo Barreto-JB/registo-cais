@@ -1,4 +1,4 @@
-const CACHE='registo-cais-demo-v11-20261111';
+const CACHE='registo-cais-demo-v12-20261111';
 const ASSETS=[
   './','./index.html','./styles-core.css','./styles-extra.css','./styles-redesign.css','./cloud-config.js','./cloud-sync.js','./app-core.js','./app-records.js','./app-ui.js','./desktop_bridge.js',
   './logo_strong_charon.svg','./logo_glovo.svg','./logo_uber_eats.svg','./logo_bolt_food.svg','./manifest.webmanifest'

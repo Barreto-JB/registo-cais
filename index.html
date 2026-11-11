@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="styles-extra.css">
   <link rel="stylesheet" href="styles-redesign.css">
 </head>
-<body>
+<body class="demo-mode">
   <div class="app-shell">
     <header class="brand-header">
       <img class="brand-logo" src="logo_strong_charon.svg" alt="Strong Charon">
@@ -194,6 +194,12 @@
   <script src="app-records.js"></script>
   <script src="cloud-sync.js"></script>
   <script src="app-ui.js"></script>
+  <script>
+    // The published demo is local-only. Never expose the cloud sign-in overlay.
+    document.body.classList.add('demo-mode');
+    const demoAuth = document.getElementById('authOverlay');
+    if (demoAuth) demoAuth.classList.add('hidden');
+  </script>
   <script>
     if ('serviceWorker' in navigator && location.protocol === 'https:') {
       window.addEventListener('load', () => navigator.serviceWorker.register('./service-worker.js').catch(() => {}));

@@ -85,3 +85,4 @@ html[data-theme="dark"] .report-identity img,html[data-theme="dark"] .brand-logo
 }
 
 
+body.demo-mode #authOverlay { display: none !important; }
